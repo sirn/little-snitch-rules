@@ -1,0 +1,12 @@
+---
+- action: allow
+  ports: 80
+  process: /Applications/Safari.app/Contents/MacOS/Safari
+  protocol: 6
+  remote: any
+
+- action: allow
+  ports: 443
+  process: /Applications/Safari.app/Contents/MacOS/Safari
+  protocol: 6
+  remote: any

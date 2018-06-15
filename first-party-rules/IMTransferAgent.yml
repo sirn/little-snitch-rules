@@ -1,0 +1,7 @@
+---
+- action: allow
+  ports: 443
+  process: /System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferAgent.app/Contents/MacOS/IMTransferAgent
+  protocol: 6
+  remote-domains:
+    - googleapis.com

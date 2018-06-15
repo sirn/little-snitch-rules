@@ -1,0 +1,4 @@
+---
+- action: deny
+  process: /Applications/The Unarchiver.app/Contents/MacOS/The Unarchiver
+  codeSignature: ignore

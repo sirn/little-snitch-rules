@@ -1,0 +1,7 @@
+---
+- action: allow
+  ports: 443
+  process: /usr/libexec/nsurlsessiond
+  protocol: 6
+  remote-domains:
+    - googleapis.com

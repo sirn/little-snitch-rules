@@ -1,0 +1,20 @@
+---
+- action: allow
+  ports: 443
+  process: /Applications/Dropbox.app/Contents/MacOS/Dropbox
+  protocol: 6
+  remote-addresses:
+    - 162.125.0.0 - 162.125.255.255
+
+- action: allow
+  process: /Applications/Dropbox.app/Contents/MacOS/Dropbox
+  ports: 443
+  protocol: 6
+  remote-domains:
+    - dropbox.com
+    - dropboxapi.com
+    - dropboxstatic.com
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Dropbox.app/Contents/MacOS/Dropbox

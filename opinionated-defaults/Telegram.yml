@@ -1,0 +1,29 @@
+---
+- action: allow
+  ports: 80
+  process: /Applications/Telegram.app/Contents/MacOS/Telegram
+  protocol: 6
+  remote-addresses:
+    - 91.108.4.0 - 91.108.11.255
+    - 91.108.56.0 - 91.108.59.255
+    - 149.154.160.0 - 149.154.175.255
+
+- action: allow
+  ports: 443
+  process: /Applications/Telegram.app/Contents/MacOS/Telegram
+  protocol: 6
+  remote-addresses:
+    - 91.108.4.0 - 91.108.11.255
+    - 91.108.56.0 - 91.108.59.255
+    - 149.154.160.0 - 149.154.175.255
+
+- action: allow
+  ports: 443
+  process: /Applications/Telegram.app/Contents/MacOS/Telegram
+  protocol: 6
+  remote-domains:
+    - telegram.org
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Telegram.app/Contents/MacOS/Telegram

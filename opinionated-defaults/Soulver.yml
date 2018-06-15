@@ -1,0 +1,12 @@
+---
+- action: allow
+  ports: 443
+  process: /Applications/Soulver.app/Contents/MacOS/Soulver
+  protocol: 6
+  remote-domains:
+    - alphavantage.co
+    - apilayer.net
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Soulver.app/Contents/MacOS/Soulver

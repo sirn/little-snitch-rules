@@ -1,0 +1,4 @@
+---
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Bear.app/Contents/MacOS/Bear

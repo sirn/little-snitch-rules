@@ -1,0 +1,7 @@
+---
+- action: allow
+  ports: 443
+  process: /System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd
+  protocol: 6
+  remote-domains:
+    - googleapis.com

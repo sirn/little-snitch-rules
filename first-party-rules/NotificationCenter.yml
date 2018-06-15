@@ -1,0 +1,7 @@
+---
+- action: allow
+  ports: 443
+  process: /System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter
+  protocol: 6
+  remote-domains:
+    - weather.com

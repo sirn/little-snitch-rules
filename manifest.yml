@@ -1,0 +1,8 @@
+---
+- description: This rule allows Apple softwares to fully function.
+  name: First Party Rules
+  src: first-party-rules
+
+- description: This rule provides an opinionated rules for third party softwares.
+  name: Opinionated Defaults
+  src: opinionated-defaults

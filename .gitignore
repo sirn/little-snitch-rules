@@ -1,0 +1,18 @@
+# System caches
+.DS_Store
+Thumbs.db
+
+# Application runtime
+tmp/
+*.pyc
+*.log
+*.tmp
+.env
+
+# Development
+/out/
+*.ini
+*.gz
+.dir-locals.el
+.tool-versions
+.venv

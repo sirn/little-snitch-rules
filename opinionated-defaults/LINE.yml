@@ -1,0 +1,22 @@
+---
+- action: allow
+  ports: 80
+  process: /Applications/LINE.app/Contents/MacOS/LINE
+  protocol: 6
+  remote-domains:
+    - naver.jp
+
+- action: allow
+  process: /Applications/LINE.app/Contents/MacOS/LINE
+  ports: 443
+  protocol: 6
+  remote-domains:
+    - line-scdn.net
+    - naver.jp
+    - line.me
+    - linecorp.com
+    - line-apps.com
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/LINE.app/Contents/MacOS/LINE

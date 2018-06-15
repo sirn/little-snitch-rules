@@ -1,0 +1,28 @@
+---
+- action: allow
+  ports: 80
+  process: /Applications/Spotify.app/Contents/MacOS/Spotify
+  protocol: 6
+  remote-domains:
+    - scdn.co
+    - spotify.com
+    - spotify.com.edgesuite.net
+
+- action: allow
+  ports: 443
+  process: /Applications/Spotify.app/Contents/MacOS/Spotify
+  protocol: 6
+  remote-domains:
+    - scdn.co
+    - spotify.com
+
+- action: allow
+  ports: 4070
+  process: /Applications/Spotify.app/Contents/MacOS/Spotify
+  protocol: 6
+  remote-domains:
+    - spotify.com
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Spotify.app/Contents/MacOS/Spotify

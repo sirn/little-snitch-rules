@@ -1,0 +1,311 @@
+{
+    "description": "This rule provides an opinionated rules for third party softwares.",
+    "name": "Opinionated Defaults",
+    "rules": [
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/1Password 7.app/Contents/MacOS/1Password 7",
+            "protocol": "6",
+            "remote-domains": [
+                "agilebits.com",
+                "1password.com",
+                "pwnedpasswords.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/1Password 7.app/Contents/MacOS/1Password 7"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Arq.app/Contents/MacOS/Arq",
+            "protocol": "6",
+            "remote-domains": [
+                "google.com",
+                "googleapis.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Arq.app/Contents/MacOS/Arq"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Arq.app/Contents/Library/LoginItems/Arq Agent.app/Contents/MacOS/Arq Agent"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Arq.app/Contents/Library/LoginItems/Arq Agent.app/Contents/Resources/arqcommitter",
+            "protocol": "6",
+            "remote-domains": [
+                "google.com",
+                "googleapis.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Arq.app/Contents/Library/LoginItems/Arq Agent.app/Contents/Resources/arqcommitter"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Audirvana Plus.app/Contents/MacOS/Audirvana Plus"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Bear.app/Contents/MacOS/Bear"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Dropbox.app/Contents/MacOS/Dropbox",
+            "protocol": "6",
+            "remote-addresses": "162.125.0.0-162.125.255.255"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Dropbox.app/Contents/MacOS/Dropbox",
+            "protocol": "6",
+            "remote-domains": [
+                "dropbox.com",
+                "dropboxapi.com",
+                "dropboxstatic.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Dropbox.app/Contents/MacOS/Dropbox"
+        },
+        {
+            "action": "allow",
+            "ports": "80",
+            "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+            "protocol": "6",
+            "remote": "any"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+            "protocol": "6",
+            "remote": "any"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Firefox.app/Contents/MacOS/pingsender"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Resources/JavaUpdater.app/Contents/MacOS/JavaUpdater"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Keyboard Maestro.app/Contents/MacOS/Keyboard Maestro Engine.app/Contents/MacOS/Keyboard Maestro Engine"
+        },
+        {
+            "action": "allow",
+            "ports": "80",
+            "process": "/Applications/LINE.app/Contents/MacOS/LINE",
+            "protocol": "6",
+            "remote-domains": [
+                "naver.jp"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/LINE.app/Contents/MacOS/LINE",
+            "protocol": "6",
+            "remote-domains": [
+                "line-scdn.net",
+                "naver.jp",
+                "line.me",
+                "linecorp.com",
+                "line-apps.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/LINE.app/Contents/MacOS/LINE"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Library/Application Support/Logitech.localized/Logitech Options.localized/LogiMgrUpdater.app/Contents/MacOS/LogiMgrUpdater"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/MailMate.app/Contents/MacOS/MailMate",
+            "protocol": "6",
+            "remote-domains": [
+                "google.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "465",
+            "process": "/Applications/MailMate.app/Contents/MacOS/MailMate",
+            "protocol": "6",
+            "remote": "any"
+        },
+        {
+            "action": "allow",
+            "ports": "993",
+            "process": "/Applications/MailMate.app/Contents/MacOS/MailMate",
+            "protocol": "6",
+            "remote": "any"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/MailMate.app/Contents/MacOS/MailMate"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/OmniFocus.app/Contents/MacOS/OmniFocus",
+            "protocol": "6",
+            "remote-domains": [
+                "omnigroup.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/OmniFocus.app/Contents/MacOS/OmniFocus"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Soulver.app/Contents/MacOS/Soulver",
+            "protocol": "6",
+            "remote-domains": [
+                "alphavantage.co",
+                "apilayer.net"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Soulver.app/Contents/MacOS/Soulver"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/SoundSource.app/Contents/MacOS/SoundSource"
+        },
+        {
+            "action": "allow",
+            "ports": "80",
+            "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+            "protocol": "6",
+            "remote-domains": [
+                "scdn.co",
+                "spotify.com",
+                "spotify.com.edgesuite.net"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+            "protocol": "6",
+            "remote-domains": [
+                "scdn.co",
+                "spotify.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "4070",
+            "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+            "protocol": "6",
+            "remote-domains": [
+                "spotify.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Spotify.app/Contents/MacOS/Spotify"
+        },
+        {
+            "action": "allow",
+            "ports": "80",
+            "process": "/Applications/Telegram.app/Contents/MacOS/Telegram",
+            "protocol": "6",
+            "remote-addresses": "91.108.4.0-91.108.11.255,91.108.56.0-91.108.59.255,149.154.160.0-149.154.175.255"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Telegram.app/Contents/MacOS/Telegram",
+            "protocol": "6",
+            "remote-addresses": "91.108.4.0-91.108.11.255,91.108.56.0-91.108.59.255,149.154.160.0-149.154.175.255"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Telegram.app/Contents/MacOS/Telegram",
+            "protocol": "6",
+            "remote-domains": [
+                "telegram.org"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Telegram.app/Contents/MacOS/Telegram"
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/The Unarchiver.app/Contents/MacOS/The Unarchiver"
+        },
+        {
+            "action": "allow",
+            "ports": "80",
+            "process": "/Applications/Twitterrific.app/Contents/MacOS/Twitterrific",
+            "protocol": "6",
+            "remote-domains": [
+                "imgur.com",
+                "twimg.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Twitterrific.app/Contents/MacOS/Twitterrific",
+            "protocol": "6",
+            "remote-domains": [
+                "imgur.com",
+                "spotify.com",
+                "scdn.co",
+                "ytimg.com",
+                "youtube.com",
+                "twimg.com",
+                "twitter.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Twitterrific.app/Contents/MacOS/Twitterrific"
+        }
+    ]
+}

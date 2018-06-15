@@ -1,0 +1,32 @@
+---
+- action: allow
+  ports: 443
+  process: /Applications/Arq.app/Contents/MacOS/Arq
+  protocol: 6
+  remote-domains:
+    - google.com
+    - googleapis.com
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Arq.app/Contents/MacOS/Arq
+
+# Arq Agent
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Arq.app/Contents/Library/LoginItems/Arq Agent.app/Contents/MacOS/Arq Agent
+
+# arqcommitter
+
+- action: allow
+  ports: 443
+  process: /Applications/Arq.app/Contents/Library/LoginItems/Arq Agent.app/Contents/Resources/arqcommitter
+  protocol: 6
+  remote-domains:
+    - google.com
+    - googleapis.com
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Arq.app/Contents/Library/LoginItems/Arq Agent.app/Contents/Resources/arqcommitter

@@ -1,0 +1,4 @@
+---
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Keyboard Maestro.app/Contents/MacOS/Keyboard Maestro Engine.app/Contents/MacOS/Keyboard Maestro Engine

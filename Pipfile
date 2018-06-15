@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+main = "python3 main.py"
+
+[packages]
+strictyaml = "*"
+
+[dev-packages]
+"flake8" = "*"
+"flake8-bugbear" = "*"
+pre-commit = "*"
+black = "*"
+
+[requires]
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true

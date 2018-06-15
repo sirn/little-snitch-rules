@@ -1,0 +1,11 @@
+---
+- action: allow
+  ports: 443
+  process: /Applications/OmniFocus.app/Contents/MacOS/OmniFocus
+  protocol: 6
+  remote-domains:
+    - omnigroup.com
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/OmniFocus.app/Contents/MacOS/OmniFocus

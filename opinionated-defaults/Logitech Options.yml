@@ -1,0 +1,4 @@
+---
+- action: deny
+  codeSignature: ignore
+  process: /Library/Application Support/Logitech.localized/Logitech Options.localized/LogiMgrUpdater.app/Contents/MacOS/LogiMgrUpdater

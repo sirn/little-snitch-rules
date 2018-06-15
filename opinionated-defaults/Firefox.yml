@@ -1,0 +1,18 @@
+---
+- action: allow
+  ports: 80
+  process: /Applications/Firefox.app/Contents/MacOS/firefox
+  protocol: 6
+  remote: any
+
+- action: allow
+  ports: 443
+  process: /Applications/Firefox.app/Contents/MacOS/firefox
+  protocol: 6
+  remote: any
+
+# Telemetry
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Firefox.app/Contents/MacOS/pingsender

@@ -1,0 +1,7 @@
+---
+- action: allow
+  ports: 443
+  process: /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent
+  protocol: 6
+  remote-domains:
+    - googleusercontent.com

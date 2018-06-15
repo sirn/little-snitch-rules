@@ -1,0 +1,23 @@
+---
+- action: allow
+  process: /Applications/MailMate.app/Contents/MacOS/MailMate
+  ports: 443
+  protocol: 6
+  remote-domains:
+    - google.com
+
+- action: allow
+  ports: 465
+  process: /Applications/MailMate.app/Contents/MacOS/MailMate
+  protocol: 6
+  remote: any
+
+- action: allow
+  ports: 993
+  process: /Applications/MailMate.app/Contents/MacOS/MailMate
+  protocol: 6
+  remote: any
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/MailMate.app/Contents/MacOS/MailMate

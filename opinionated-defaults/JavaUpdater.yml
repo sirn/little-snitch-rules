@@ -1,0 +1,4 @@
+---
+- action: deny
+  codeSignature: ignore
+  process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Resources/JavaUpdater.app/Contents/MacOS/JavaUpdater

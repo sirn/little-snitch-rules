@@ -1,0 +1,90 @@
+{
+    "description": "This rule allows Apple softwares to fully function.",
+    "name": "First Party Rules",
+    "rules": [
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent",
+            "protocol": "6",
+            "remote-domains": [
+                "googleusercontent.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferAgent.app/Contents/MacOS/IMTransferAgent",
+            "protocol": "6",
+            "remote-domains": [
+                "googleapis.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter",
+            "protocol": "6",
+            "remote-domains": [
+                "weather.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/Versions/A/com.apple.Safari.SafeBrowsing.Service",
+            "protocol": "6",
+            "remote-domains": [
+                "googleapis.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "80",
+            "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+            "protocol": "6",
+            "remote": "any"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+            "protocol": "6",
+            "remote": "any"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/System/Library/PrivateFrameworks/WeatherFoundation.framework/Versions/A/XPCServices/WeatherService.xpc/Contents/MacOS/WeatherService",
+            "protocol": "6",
+            "remote-domains": [
+                "weather.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd",
+            "protocol": "6",
+            "remote-domains": [
+                "googleapis.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "ports": "any",
+            "process": "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
+            "protocol": "any",
+            "remote-addresses": "10.0.0.0-10.255.255.255,172.16.0.0-172.31.255.255,192.168.0.0-192.168.255.255"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
+            "process": "/usr/libexec/nsurlsessiond",
+            "protocol": "6",
+            "remote-domains": [
+                "googleapis.com"
+            ]
+        }
+    ]
+}

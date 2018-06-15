@@ -1,0 +1,25 @@
+---
+- action: allow
+  ports: 80
+  process: /Applications/Twitterrific.app/Contents/MacOS/Twitterrific
+  protocol: 6
+  remote-domains:
+    - imgur.com
+    - twimg.com
+
+- action: allow
+  ports: 443
+  process: /Applications/Twitterrific.app/Contents/MacOS/Twitterrific
+  protocol: 6
+  remote-domains:
+    - imgur.com
+    - spotify.com
+    - scdn.co
+    - ytimg.com
+    - youtube.com
+    - twimg.com
+    - twitter.com
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Twitterrific.app/Contents/MacOS/Twitterrific
