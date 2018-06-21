@@ -178,6 +178,21 @@
         {
             "action": "allow",
             "ports": "443",
+            "process": "/Applications/Memory Tracker by Timely.app/Contents/MacOS/Memory Tracker by Timely",
+            "protocol": "6",
+            "remote-domains": [
+                "timelyapp.com",
+                "timelytimetracking.s3.amazonaws.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Memory Tracker by Timely.app/Contents/MacOS/Memory Tracker by Timely"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
             "process": "/Applications/OmniFocus.app/Contents/MacOS/OmniFocus",
             "protocol": "6",
             "remote-domains": [
