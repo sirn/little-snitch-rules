@@ -1,0 +1,7 @@
+---
+- action: allow
+  ports: 443
+  process: /System/Library/PrivateFrameworks/WeatherKit.framework/Versions/A/XPCServices/com.apple.WeatherKitService.xpc/Contents/MacOS/com.apple.WeatherKitService
+  protocol: 6
+  remote-domains:
+    - weather.com
