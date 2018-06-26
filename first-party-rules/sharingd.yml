@@ -1,0 +1,6 @@
+---
+- action: allow
+  direction: incoming
+  ports: any
+  process: /usr/libexec/sharingd
+  protocol: any

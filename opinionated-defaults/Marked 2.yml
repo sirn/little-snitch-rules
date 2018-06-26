@@ -1,0 +1,11 @@
+---
+- action: allow
+  ports: 443
+  process: /Applications/Marked 2.app/Contents/MacOS/Marked 2
+  protocol: 6
+  remote-domains:
+    - mathjax.org
+
+- action: deny
+  codeSignature: ignore
+  process: /Applications/Marked 2.app/Contents/MacOS/Marked 2

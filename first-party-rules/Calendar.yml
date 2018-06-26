@@ -1,0 +1,7 @@
+---
+- action: allow
+  ports: 443
+  process: /Applications/Calendar.app/Contents/MacOS/Calendar
+  protocol: 6
+  remote-domains:
+    - weather.com

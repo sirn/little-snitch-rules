@@ -178,6 +178,20 @@
         {
             "action": "allow",
             "ports": "443",
+            "process": "/Applications/Marked 2.app/Contents/MacOS/Marked 2",
+            "protocol": "6",
+            "remote-domains": [
+                "mathjax.org"
+            ]
+        },
+        {
+            "action": "deny",
+            "codeSignature": "ignore",
+            "process": "/Applications/Marked 2.app/Contents/MacOS/Marked 2"
+        },
+        {
+            "action": "allow",
+            "ports": "443",
             "process": "/Applications/Memory Tracker by Timely.app/Contents/MacOS/Memory Tracker by Timely",
             "protocol": "6",
             "remote-domains": [
